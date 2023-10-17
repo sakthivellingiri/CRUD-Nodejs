@@ -1,0 +1,15 @@
+/* h1{
+    color: blue;
+} */
+.mainRegister{
+    background-image: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.loginMain{
+    background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg);
+    background-size: cover;
+
+}

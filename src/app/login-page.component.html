@@ -1,0 +1,20 @@
+<div class="d-flex flex-column align-items-center justify-content-center vh-100 loginMain">
+    <form (submit)="dashboard($event)">
+        <h2>LOGIN </h2>
+        <div class="text-center fw-bold mt-3">
+            <div>
+                <label for="">EMAIL</label> <br>
+                <input type="text" name="emial" id="email" [(ngModel)]="email" placeholder="ENTER YOUR EMAIL"
+                    class="form-control">
+            </div>
+            <div>
+                <label for="">PASSWORD</label> <br>
+                <input type="password" name="password" id="password" [(ngModel)]="password"
+                    placeholder="ENTER  YOUR PASSWORD" value="" class="form-control">
+            </div>
+            <div>
+                <button class="mt-3 btn btn-primary">LOGIN</button>
+            </div>
+        </div>
+    </form>
+</div>

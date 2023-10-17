@@ -1,0 +1,68 @@
+<!-- <div class="mainRegister d-flex  flex-column vh-100 justify-content-center align-items-center">
+    <h3 class="">UPDATE</h3>
+    <div>
+        <form (submit)="Update()">
+            <Table class="mainTableRegister fw-bold">
+                <tr>
+                    <td> <label for="">USERNAME:</label> </td>
+                    <td><input class="form-control" type="text" id="username" name="username"
+                            [(ngModel)]="user.username" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="">EMAIL:</label> </td>
+                    <td><input class="form-control" type="email" id="email" name="email" [(ngModel)]="user.email"
+                            required></td>
+                </tr>
+                <tr>
+                    <td> <label for="">PASSWORD:</label> </td>
+                    <td><input class="form-control" type="password" id="password" name="password"
+                            [(ngModel)]="user.password"></td>
+                </tr>
+                <tr>
+                    <td><label for=""></label></td>
+
+                    <button type="submit" class="btn btn-primary mt-3" (click)='onSubmit()'>SUMBIT</button>
+                </tr>
+            </Table>
+        </form>
+    </div>
+</div> -->
+<!-- new -code-try -->
+<div class="d-flex flex-column align-items-center loginpage01 bg-success vh-100">
+    <h1 class="mt-3 p-3 mainHead">UPDATE PAGE</h1>
+    <form (ngSubmit)="handleUpdate()">
+        <table class="mt-5 p-3 table-main text-white">
+           
+            <tr>
+                <td>
+                    <label>Username:</label>
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="username" name="username" placeholder="Username" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                </td>
+                <td>
+                    <input type="email" [(ngModel)]="email" name="email" placeholder="Email" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>PASSWORD:</label>
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="password" name="password" placeholder="PASSWORD" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

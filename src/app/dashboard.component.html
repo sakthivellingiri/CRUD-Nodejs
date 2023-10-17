@@ -1,0 +1,54 @@
+<!-- <div class="card">
+    <div class="card-header bg-primary text-white">
+      Hello 😘! {{username}}
+    </div>
+    <div class="card-body fw-bold">
+      <h5 class="card-title">ID: <span class="text-secondary">{{ id }}</span></h5>
+      <p class="card-text">Username: <span class="text-secondary">{{username}}</span></p>
+      <p class="card-text">Email: <span class="text-secondary">{{email}}</span></p>
+      <p class="card-text">Password: <span class="text-secondary">{{password}}</span></p>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-success"   >Update</button>
+      <button class="btn btn-danger ms-2 (click)="delete()">Delete</button>
+    </div>
+  </div> -->
+<div class="card">
+  <div class="card-header bg-primary text-white">
+    Hello 😘! {{ username }}
+  </div>
+  <div class="card-body fw-bold">
+      <h5 class="card-title">ID: <span class="text-secondary">{{ id }}</span></h5>
+      <p class="card-text">Username: <span class="text-secondary">{{ username }}</span></p>
+      <p class="card-text">Email: <span class="text-secondary">{{ email }}</span></p>
+      <p class="card-text">Password: <span class="text-secondary">{{ password }}</span></p>
+    </div>
+
+  <!-- <div>
+    <div>
+      <table>
+        <tr>
+          <td><label for="">Username</label></td>
+          <td><input type="text" id="username" value="{{username}}"></td>
+        </tr>
+        <tr>
+          <td><label for="">Email</label></td>
+          <td><input type="text" id="email" value="{{email}}"></td>
+        </tr>
+        <tr>
+          <td><label for="">Password</label></td>
+          <td><input type="text" id="password" value="{{password}}"></td>
+        </tr>
+      </table>
+    </div> -->
+
+
+
+  <!-- </div> -->
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="fetchdata(id)" >Update</button>
+    <button class="btn btn-danger ms-2" (click)="del(id)">Delete</button>
+
+    <!-- <button class="btn btn-danger ms-2" (click)="del()">Delete</button> -->
+  </div>
+</div>

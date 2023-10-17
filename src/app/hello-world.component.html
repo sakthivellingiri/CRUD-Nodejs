@@ -1,0 +1,36 @@
+<!-- <h1>{{title}} Itzzz me SAKTHIII</h1> -->
+
+
+
+
+<div class="mainRegister d-flex  flex-column vh-100 justify-content-center align-items-center">
+    <h3 class="">REGISTER</h3>
+    <div>
+        <form (submit)="register()">
+        <Table class="mainTableRegister fw-bold">
+            <tr>
+                <td> <label for="">USERNAME:</label> </td>
+                <td><input class="form-control" type="text" id="username" name="username" [(ngModel)]="user.username" required></td>
+            </tr>
+            <tr>
+                <td> <label for="">EMAIL:</label> </td>
+                <td><input class="form-control" type="email" id="email" name="email" [(ngModel)]="user.email" required></td>
+            </tr>
+            <tr>
+                <td> <label for="">PASSWORD:</label> </td>
+                <td><input class="form-control" type="password" id="password" name="password" [(ngModel)]="user.password"></td>
+            </tr>
+            <tr>
+                <td><label for=""></label></td>
+                <button class="form-control" type="submit" class="btn btn-primary mt-3">Register</button>
+                <button type="submit" class="btn btn-primary mt-3" (click)='onSubmit()'>LOGIN</button>
+                <!-- <button class="btn-primary btn mt-3 ms-2"><a routerLink="/login">login</a></button> -->
+            </tr>
+           
+            
+        </Table>
+    </form>
+    </div>
+</div>
+
+  
